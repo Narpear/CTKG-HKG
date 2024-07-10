@@ -5,7 +5,7 @@ from delete_html import delete_file
 import pandas as pd
 
 # Load the trials data
-trials = pd.read_csv('All_Trials_Data.csv')
+trials = pd.read_csv('1. Epilepsy.csv')
 n = len(trials)
 trials['Principal_Investigators'] = ''
 # Process each trial
@@ -34,5 +34,5 @@ for i in range(n):  # Changed range to iterate through all rows
 print("Task completed successfully")
 
 # Save the updated DataFrame to a new CSV file
-trials.to_csv('All_Trials_Data_With_PIs.csv', index=False)
-print("Data saved successfully to All_Trials_Data_With_PIs.csv")
+trials.to_csv('1. Epilepsy_PIs.csv', index=False)
+print("Data saved successfully to 1. Epilepsy_PIs.csv")

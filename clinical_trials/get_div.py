@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 
 def get_pi_names(nct):
     # Correctly format the file path using f-string
-    file_path = fr"C:\Users\prerk\OneDrive\Desktop\Prerana\Projects\IISER\CT-KnowledgeGraph\alldata\{nct}.html"
+    file_path = fr"C:\Users\prerk\OneDrive\Desktop\Prerana\Projects\CTKG-HKG\clinical_trials\{nct}.html"
     
     # Read the HTML file
     with open(file_path, "r", encoding="utf-8") as file:
