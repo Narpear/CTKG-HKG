@@ -1,0 +1,16 @@
+## Datasets
+
+Our research leverages a custom-built dataset that integrates information from two primary sources: clinicaltrials.gov and Hetionet. We extracted data from clinicaltrials.gov for 200 clinical experiments, equally divided between epilepsy and vitiligo studies. This comprehensive dataset encompasses a wide range of information about each trial, including disease and condition details, study phase, principal investigators, study locations, interventions (pharmaceutical, behavioral, etc.), and participant demographics (age, sex).
+
+The data collection process involved both automated extraction of downloadable data from clinicaltrials.gov and manual extraction of additional details from individual trial webpages not available through bulk download. This meticulous approach ensured the capture of nuanced information crucial for our research.
+
+To enrich our dataset, we incorporated relevant information from Hetionet, a comprehensive biomedical knowledge network. Hetionet integrates data from 29 diverse biomedical databases, providing a wealth of interconnected information on genes associated with epilepsy and vitiligo, related compounds, symptoms, biological pathways, and other pertinent biomedical entities.
+
+The combined dataset was used to construct a knowledge graph in Aura DB (Neo4j), following the schema illustrated in Figure X. This graph structure represents a variety of entities and their relationships, including:
+
+• Genes, diseases (focusing on epilepsy and vitiligo), compounds, and studies
+• Principal investigators, anatomical structures, and biological processes
+• Molecular functions, cellular components, pathways, and symptoms
+• Study characteristics such as phases, interventions, locations, age, and sex
+
+The resulting knowledge graph provides a rich, interconnected representation of clinical trial data and broader biomedical knowledge. This structure enables complex queries and insights across various domains of epilepsy and vitiligo research, facilitating a more comprehensive understanding of these conditions and potential treatment approaches.
